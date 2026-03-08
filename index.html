@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Para Ti ❤️</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background:linear-gradient(135deg,#ff758c,#ff7eb3,#ffb199);
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+overflow:hidden;
+}
+
+.contenedor{
+
+background:white;
+width:90%;
+max-width:420px;
+padding:35px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 15px 40px rgba(0,0,0,0.3);
+
+}
+
+h1{
+color:#ff4d6d;
+}
+
+p{
+font-size:16px;
+line-height:1.6;
+}
+
+button{
+
+padding:12px 20px;
+border:none;
+border-radius:10px;
+font-size:18px;
+cursor:pointer;
+margin:10px;
+
+}
+
+.si{
+background:#ff4d6d;
+color:white;
+}
+
+.no{
+background:#444;
+color:white;
+position:absolute;
+}
+
+.carta{
+
+display:none;
+margin-top:20px;
+
+}
+
+.corazon{
+
+position:absolute;
+font-size:20px;
+animation:subir 6s linear infinite;
+
+}
+
+@keyframes subir{
+
+from{
+transform:translateY(100vh);
+opacity:1;
+}
+
+to{
+transform:translateY(-10vh);
+opacity:0;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="contenedor">
+
+<h1 id="titulo"></h1>
+
+<p id="texto"></p>
+
+<h2>¿Puedo ser tu novio? ❤️</h2>
+
+<button class="si" onclick="aceptar()">Sí ❤️</button>
+<button class="no" id="no">No</button>
+
+<div class="carta" id="carta">
+
+<h2>Una carta para ti 💌</h2>
+
+<p>
+Quería hacer algo especial para ti, algo diferente. 
+Tal vez no soy perfecto, pero sí sé algo muy claro: desde que llegaste a mi vida todo se volvió más bonito.
+</p>
+
+<p>
+Tu sonrisa tiene una forma increíble de alegrar mis días, 
+y tu forma de ser hace que cada momento contigo sea especial.
+</p>
+
+<p>
+Me encanta hablar contigo, 
+reír contigo y compartir incluso las cosas más simples.
+</p>
+
+<p>
+Tal vez esta página es algo pequeño, pero lo hice pensando en ti, 
+porque eres alguien muy importante para mí.
+</p>
+
+<p>
+Y quiero que sepas que haré todo lo posible para hacerte feliz y cuidar lo que tenemos.
+</p>
+
+<h2>Gracias por existir ❤️</h2>
+
+</div>
+
+</div>
+
+<script>
+
+let titulo="TE AMOOO ❤️";
+let texto="Desde que te conocí algo cambió en mi vida. Cada momento contigo es especial y me haces muy feliz.";
+
+let i=0;
+
+function escribirTitulo(){
+
+if(i<titulo.length){
+
+document.getElementById("titulo").innerHTML+=titulo.charAt(i);
+
+i++;
+
+setTimeout(escribirTitulo,80);
+
+}
+
+}
+
+escribirTitulo();
+
+let j=0;
+
+function escribirTexto(){
+
+if(j<texto.length){
+
+document.getElementById("texto").innerHTML+=texto.charAt(j);
+
+j++;
+
+setTimeout(escribirTexto,40);
+
+}
+
+}
+
+setTimeout(escribirTexto,800);
+
+function aceptar(){
+
+document.getElementById("carta").style.display="block";
+
+}
+
+let no=document.getElementById("no");
+
+no.addEventListener("mouseover",mover);
+no.addEventListener("touchstart",mover);
+
+function mover(){
+
+let x=Math.random()*window.innerWidth;
+let y=Math.random()*window.innerHeight;
+
+no.style.left=x+"px";
+no.style.top=y+"px";
+
+}
+
+function corazones(){
+
+let c=document.createElement("div");
+
+c.classList.add("corazon");
+
+c.innerHTML="❤️";
+
+c.style.left=Math.random()*100+"vw";
+
+document.body.appendChild(c);
+
+setTimeout(()=>{
+c.remove();
+},6000);
+
+}
+
+setInterval(corazones,400);
+
+</script>
+
+</body>
+</html>
