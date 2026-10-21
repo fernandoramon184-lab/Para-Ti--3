@@ -1,230 +1,346 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Para Ti ❤️</title>
-
-<style>
-
-body{
-margin:0;
-font-family:Arial, sans-serif;
-background:linear-gradient(135deg,#ff758c,#ff7eb3,#ffb199);
-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-overflow:hidden;
-}
-
-.contenedor{
-
-background:white;
-width:90%;
-max-width:420px;
-padding:35px;
-border-radius:20px;
-text-align:center;
-box-shadow:0 15px 40px rgba(0,0,0,0.3);
-
-}
-
-h1{
-color:#ff4d6d;
-}
-
-p{
-font-size:16px;
-line-height:1.6;
-}
-
-button{
-
-padding:12px 20px;
-border:none;
-border-radius:10px;
-font-size:18px;
-cursor:pointer;
-margin:10px;
-
-}
-
-.si{
-background:#ff4d6d;
-color:white;
-}
-
-.no{
-background:#444;
-color:white;
-position:absolute;
-}
-
-.carta{
-
-display:none;
-margin-top:20px;
-
-}
-
-.corazon{
-
-position:absolute;
-font-size:20px;
-animation:subir 6s linear infinite;
-
-}
-
-@keyframes subir{
-
-from{
-transform:translateY(100vh);
-opacity:1;
-}
-
-to{
-transform:translateY(-10vh);
-opacity:0;
-}
-
-}
-
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CryptoRadar | Buscador cripto</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 20px;
+      background: #0b1120;
+      color: #edf2f7;
+      font-family: Arial, sans-serif;
+    }
+    main { max-width: 1000px; margin: auto; }
+    h1 { color: #5eead4; }
+    .panel {
+      background: #172235;
+      border: 1px solid #2b3b50;
+      padding: 16px;
+      border-radius: 12px;
+      margin: 16px 0;
+    }
+    input, select, button {
+      padding: 12px;
+      border-radius: 8px;
+      border: 1px solid #43536a;
+      background: #101a2b;
+      color: white;
+      font-size: 15px;
+      max-width: 100%;
+    }
+    input { width: 100%; margin-bottom: 10px; }
+    button { cursor: pointer; background: #0f766e; }
+    .filters { display: grid; gap: 10px; }
+    .table-wrap { overflow-x: auto; }
+    table { width: 100%; border-collapse: collapse; }
+    th, td {
+      text-align: left;
+      padding: 12px 8px;
+      border-bottom: 1px solid #2b3b50;
+      white-space: nowrap;
+    }
+    th { color: #9fb0c7; font-size: 13px; }
+    .up { color: #5eead4; }
+    .down { color: #fca5a5; }
+    .muted { color: #9fb0c7; font-size: 13px; }
+    a { color: #5eead4; }
+    @media (min-width: 650px) {
+      .filters { grid-template-columns: 2fr 1fr 1fr; }
+    }
+  </style>
 </head>
-
 <body>
+<main>
+  <h1>◈ CryptoRadar</h1>
+  <p>Encuentra y analiza oportunidades del mercado cripto.</p>
 
-<div class="contenedor">
+  
+<section class="panel" id="radar-panel">
+  <h2>🔎 Radar de nuevos pares — Base</h2>
+  <p id="radar-status">Consultando resultados del escáner...</p>
+  <p id="radar-updated" class="muted"></p>
 
-<h1 id="titulo"></h1>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Par</th>
+          <th>Precio USD</th>
+          <th>Liquidez</th>
+          <th>Volumen 24 h</th>
+          <th>Cambio 24 h</th>
+          <th>Ver</th>
+        </tr>
+      </thead>
+      <tbody id="radar-results">
+        <tr>
+          <td colspan="6">Cargando resultados...</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  </section>
 
-<p id="texto"></p>
+  <section class="panel">
+    <div class="filters">
+      <input id="search" placeholder="Buscar moneda: Bitcoin, SOL...">
+      <select id="sort">
+        <option value="market_cap_desc">Mayor capitalización</option>
+        <option value="volume_desc">Mayor volumen</option>
+        <option value="change_desc">Mayor subida 24 h</option>
+        <option value="change_asc">Mayor caída 24 h</option>
+      </select>
+      <select id="minVolume">
+        <option value="0">Todo el volumen</option>
+        <option value="100000">Volumen > $100 mil</option>
+        <option value="1000000">Volumen > $1 millón</option>
+        <option value="10000000">Volumen > $10 millones</option>
+      </select>
+    </div>
+    <p id="count" class="muted"></p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Moneda</th>
+            <th>Precio USD</th>
+            <th>Cambio 24 h</th>
+            <th>Volumen 24 h</th>
+            <th>Capitalización</th>
+          </tr>
+        </thead>
+        <tbody id="coins">
+          <tr><td colspan="5">Cargando datos...</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
 
-<h2>¿Puedo ser tu novio? ❤️</h2>
-
-<button class="si" onclick="aceptar()">Sí ❤️</button>
-<button class="no" id="no">No</button>
-
-<div class="carta" id="carta">
-
-<h2>Una carta para ti 💌</h2>
-
-<p>
-Quería hacer algo especial para ti, algo diferente. 
-Tal vez no soy perfecto, pero sí sé algo muy claro: desde que llegaste a mi vida todo se volvió más bonito.
-</p>
-
-<p>
-Tu sonrisa tiene una forma increíble de alegrar mis días, 
-y tu forma de ser hace que cada momento contigo sea especial.
-</p>
-
-<p>
-Me encanta hablar contigo, 
-reír contigo y compartir incluso las cosas más simples.
-</p>
-
-<p>
-Tal vez esta página es algo pequeño, pero lo hice pensando en ti, 
-porque eres alguien muy importante para mí.
-</p>
-
-<p>
-Y quiero que sepas que haré todo lo posible para hacerte feliz y cuidar lo que tenemos.
-</p>
-
-<h2>Gracias por existir ❤️</h2>
-
-</div>
-
-</div>
+  <p class="muted">
+    Este buscador es informativo. Una subida de precio
+    no garantiza beneficios. Verifica cada proyecto antes
+    de tomar decisiones.
+  </p>
+</main>
 
 <script>
+const endpoint =
+  "https://api.coingecko.com/api/v3/coins/markets" +
+  "?vs_currency=usd&order=market_cap_desc" +
+  "&per_page=100&page=1&sparkline=false" +
+  "&price_change_percentage=24h";
 
-let titulo="TE AMOOO ❤️";
-let texto="Desde que te conocí algo cambió en mi vida. Cada momento contigo es especial y me haces muy feliz.";
+let coins = [];
 
-let i=0;
+const money = n => n == null
+  ? "N/D"
+  : new Intl.NumberFormat("en-US", {
+      style: "currency",
+      currency: "USD",
+      maximumSignificantDigits: 6
+    }).format(n);
 
-function escribirTitulo(){
+const compact = n => n == null
+  ? "N/D"
+  : "$" + new Intl.NumberFormat("en-US", {
+      notation: "compact",
+      maximumFractionDigits: 2
+    }).format(n);
 
-if(i<titulo.length){
+async function loadCoins() {
+  const status = document.getElementById("status");
+  status.textContent = "Consultando el mercado...";
+  document.getElementById("refresh").disabled = true;
 
-document.getElementById("titulo").innerHTML+=titulo.charAt(i);
-
-i++;
-
-setTimeout(escribirTitulo,80);
-
+  try {
+    const response = await fetch(endpoint);
+    if (!response.ok) {
+      throw new Error("HTTP " + response.status);
+    }
+    coins = await response.json();
+    status.textContent =
+      "Datos recibidos. Última consulta: " +
+      new Date().toLocaleTimeString();
+    render();
+  } catch (error) {
+    status.textContent =
+      "No se pudieron cargar los datos. Comprueba Internet " +
+      "e inténtalo más tarde. Si persiste, puede haber un " +
+      "límite de solicitudes de la API.";
+    console.error(error);
+  } finally {
+    document.getElementById("refresh").disabled = false;
+  }
 }
 
+function render() {
+  const query = document.getElementById("search")
+    .value.trim().toLowerCase();
+  const min = Number(document.getElementById("minVolume").value);
+  const sort = document.getElementById("sort").value;
+
+  let filtered = coins.filter(c =>
+    (c.name.toLowerCase().includes(query) ||
+     c.symbol.toLowerCase().includes(query)) &&
+    (c.total_volume || 0) >= min
+  );
+
+  filtered.sort((a, b) => {
+    if (sort === "volume_desc")
+      return (b.total_volume || 0) - (a.total_volume || 0);
+    if (sort === "change_desc")
+      return (b.price_change_percentage_24h_in_currency || 0) -
+             (a.price_change_percentage_24h_in_currency || 0);
+    if (sort === "change_asc")
+      return (a.price_change_percentage_24h_in_currency || 0) -
+             (b.price_change_percentage_24h_in_currency || 0);
+    return (b.market_cap || 0) - (a.market_cap || 0);
+  });
+
+  document.getElementById("count").textContent =
+    filtered.length + " monedas encontradas en los datos cargados";
+
+  const tbody = document.getElementById("coins");
+  tbody.replaceChildren();
+
+  if (!filtered.length) {
+    tbody.innerHTML =
+      '<tr><td colspan="5">No hay resultados con esos filtros.</td></tr>';
+    return;
+  }
+
+  filtered.forEach(c => {
+    const change = c.price_change_percentage_24h_in_currency;
+    const tr = document.createElement("tr");
+    const name = document.createElement("td");
+    const link = document.createElement("a");
+    link.href = "https://www.coingecko.com/en/coins/" +
+      encodeURIComponent(c.id);
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+    link.textContent = c.name + " (" + c.symbol.toUpperCase() + ")";
+    name.append(link);
+
+    const values = [
+      money(c.current_price),
+      change == null ? "N/D" : change.toFixed(2) + "%",
+      compact(c.total_volume),
+      compact(c.market_cap)
+    ];
+
+    tr.append(name);
+    values.forEach((value, i) => {
+      const td = document.createElement("td");
+      td.textContent = value;
+      if (i === 1 && change != null) {
+        td.className = change >= 0 ? "up" : "down";
+      }
+      tr.append(td);
+    });
+    tbody.append(tr);
+  });
 }
 
-escribirTitulo();
+document.getElementById("search").addEventListener("input", render);
+document.getElementById("sort").addEventListener("change", render);
+document.getElementById("minVolume").addEventListener("change", render);
+document.getElementById("refresh").addEventListener("click", loadCoins);
 
-let j=0;
-
-function escribirTexto(){
-
-if(j<texto.length){
-
-document.getElementById("texto").innerHTML+=texto.charAt(j);
-
-j++;
-
-setTimeout(escribirTexto,40);
-
-}
-
-}
-
-setTimeout(escribirTexto,800);
-
-function aceptar(){
-
-document.getElementById("carta").style.display="block";
-
-}
-
-let no=document.getElementById("no");
-
-no.addEventListener("mouseover",mover);
-no.addEventListener("touchstart",mover);
-
-function mover(){
-
-let x=Math.random()*window.innerWidth;
-let y=Math.random()*window.innerHeight;
-
-no.style.left=x+"px";
-no.style.top=y+"px";
-
-}
-
-function corazones(){
-
-let c=document.createElement("div");
-
-c.classList.add("corazon");
-
-c.innerHTML="❤️";
-
-c.style.left=Math.random()*100+"vw";
-
-document.body.appendChild(c);
-
-setTimeout(()=>{
-c.remove();
-},6000);
-
-}
-
-setInterval(corazones,400);
-
+loadCoins();
 </script>
+  
+async function loadRadarResults() {
+  const status = document.getElementById("radar-status");
+  const updated = document.getElementById("radar-updated");
+  const tbody = document.getElementById("radar-results");
+
+  try {
+    // Evita reutilizar una respuesta antigua de la caché.
+    const url = "./data/new-pools.json?t=" + Date.now();
+    const response = await fetch(url, { cache: "no-store" });
+
+    if (!response.ok) {
+      throw new Error("HTTP " + response.status);
+    }
+
+    const result = await response.json();
+    const pools = result.pools || [];
+
+    status.textContent = pools.length +
+      " pares encontrados en la última búsqueda.";
+
+    updated.textContent = result.updated_at
+      ? "Última actualización UTC: " + result.updated_at
+      : "";
+
+    tbody.replaceChildren();
+
+    if (pools.length === 0) {
+      const tr = document.createElement("tr");
+      const td = document.createElement("td");
+      td.colSpan = 6;
+      td.textContent = "No se encontraron pares en esta consulta.";
+      tr.appendChild(td);
+      tbody.appendChild(tr);
+      return;
+    }
+
+    for (const pool of pools) {
+      const tr = document.createElement("tr");
+
+      const values = [
+        pool.name || "Par sin nombre",
+        pool.price_usd == null ? "N/D" : "$" + pool.price_usd,
+        pool.liquidity_usd == null
+          ? "N/D" : "$" + Number(pool.liquidity_usd).toLocaleString(),
+        pool.volume_24h_usd == null
+          ? "N/D" : "$" + Number(pool.volume_24h_usd).toLocaleString(),
+        pool.price_change_24h == null
+          ? "N/D" : pool.price_change_24h + "%"
+      ];
+
+      for (const value of values) {
+        const td = document.createElement("td");
+        td.textContent = value;
+        tr.appendChild(td);
+      }
+
+      const linkCell = document.createElement("td");
+      const link = document.createElement("a");
+
+      // Solo se permiten enlaces a la web oficial de GeckoTerminal.
+      if (pool.address &&
+          /^[a-zA-Z0-9]+$/.test(pool.address)) {
+        link.href =
+          "https://www.geckoterminal.com/base/pools/" +
+          encodeURIComponent(pool.address);
+        link.target = "_blank";
+        link.rel = "noopener noreferrer";
+        link.textContent = "Ver par";
+      } else {
+        link.textContent = "No disponible";
+      }
+
+      linkCell.appendChild(link);
+      tr.appendChild(linkCell);
+      tbody.appendChild(tr);
+    }
+  } catch (error) {
+    status.textContent =
+      "No se pudieron cargar los resultados del escáner.";
+    updated.textContent =
+      "Comprueba que GitHub Pages ya publicó data/new-pools.json.";
+    console.error("Error al cargar CryptoRadar:", error);
+  }
+}
+
+loadRadarResults();
+
+// Actualiza la vista cada 5 minutos mientras la página está abierta.
+setInterval(loadRadarResults, 5 * 60 * 1000);
 
 </body>
 </html>
