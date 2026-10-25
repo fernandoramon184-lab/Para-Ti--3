@@ -1,207 +1,207 @@
 {
-  "updated_at": "2026-10-25T10:10:09.649960+00:00",
+  "updated_at": "2026-10-25T14:23:22.140235+00:00",
   "network": "Base",
   "count": 20,
   "pools": [
     {
-      "name": "dogpatch / ETH",
-      "address": "0x3029688e97622b0a8f2eae4bdc997f4a68e9f5675c7c658dda00bcee79758841",
-      "created_at": "2026-10-25T10:04:47Z",
-      "price_usd": "0.00000392923387267516",
-      "liquidity_usd": "3929.23387267516",
-      "volume_24h_usd": "0.022562491",
+      "name": "ZGAP / ETH",
+      "address": "0x53bf62e3920ef10e593c8a1b24a091916ea00d076913a38b9767b3903a57c7c1",
+      "created_at": "2026-10-25T14:22:29Z",
+      "price_usd": "0.00000412823126779515",
+      "liquidity_usd": "3943.67260671468",
+      "volume_24h_usd": "190.7106195866",
       "price_change_24h": "0",
-      "url": "https://www.geckoterminal.com/base/pools/0x3029688e97622b0a8f2eae4bdc997f4a68e9f5675c7c658dda00bcee79758841"
+      "url": "https://www.geckoterminal.com/base/pools/0x53bf62e3920ef10e593c8a1b24a091916ea00d076913a38b9767b3903a57c7c1"
     },
     {
-      "name": "Aerospace / OUSD 50%",
-      "address": "0x78a2aee89a37e64bb362d1df93764975277d97e0a7b2dae1135e1cb028bc8922",
-      "created_at": "2026-10-25T10:04:41Z",
-      "price_usd": "0.0000554491380276592",
-      "liquidity_usd": "4005.9407",
-      "volume_24h_usd": "0.2109216281",
+      "name": "CRU / WETH",
+      "address": "0x5721c7399c7ac4a11f4dcf055bce73999b8db91ca3b9b35ad1220512d6bfdf48",
+      "created_at": "2026-10-25T14:21:29Z",
+      "price_usd": "0.000000229996342069297",
+      "liquidity_usd": "23003.7732",
+      "volume_24h_usd": "0.205590948",
       "price_change_24h": "0",
-      "url": "https://www.geckoterminal.com/base/pools/0x78a2aee89a37e64bb362d1df93764975277d97e0a7b2dae1135e1cb028bc8922"
+      "url": "https://www.geckoterminal.com/base/pools/0x5721c7399c7ac4a11f4dcf055bce73999b8db91ca3b9b35ad1220512d6bfdf48"
     },
     {
-      "name": "CLESIS / ETH 0.01%",
-      "address": "0xb43d817cefa8a23713791e7b7d691acadfe3d27b57433b94bd7332c22c015920",
-      "created_at": "2026-10-25T10:04:21Z",
-      "price_usd": "0.00000277203141149902",
-      "liquidity_usd": "2752.3517",
-      "volume_24h_usd": "217.1008106",
-      "price_change_24h": "18.808",
-      "url": "https://www.geckoterminal.com/base/pools/0xb43d817cefa8a23713791e7b7d691acadfe3d27b57433b94bd7332c22c015920"
-    },
-    {
-      "name": "RDVRK / WETH 0.3%",
-      "address": "0x6a06d85107329044153f8ac359d2f32406df847d",
-      "created_at": "2026-10-25T10:04:05Z",
-      "price_usd": "0.000116651570636426",
-      "liquidity_usd": "23292.7869",
-      "volume_24h_usd": "0.006978739802",
-      "price_change_24h": "-0.044",
-      "url": "https://www.geckoterminal.com/base/pools/0x6a06d85107329044153f8ac359d2f32406df847d"
-    },
-    {
-      "name": "XCHAT / WETH",
-      "address": "0x1186ef44cb591495e125ad34fab453a2dd27a099",
-      "created_at": "2026-10-25T10:03:59Z",
-      "price_usd": "0.000000914558225125386",
-      "liquidity_usd": "8731.7509",
-      "volume_24h_usd": "845.3572176999",
-      "price_change_24h": "37.175",
-      "url": "https://www.geckoterminal.com/base/pools/0x1186ef44cb591495e125ad34fab453a2dd27a099"
-    },
-    {
-      "name": "URSD / ZORA",
-      "address": "0xf08c77c175bc6f979d5d55ffe8f70ad838646521b673a87a70556cc00601db9f",
-      "created_at": "2026-10-25T10:03:35Z",
-      "price_usd": "0.0000928491421049214",
-      "liquidity_usd": "91853.5236",
-      "volume_24h_usd": "26.2066433646",
-      "price_change_24h": "3.742",
-      "url": "https://www.geckoterminal.com/base/pools/0xf08c77c175bc6f979d5d55ffe8f70ad838646521b673a87a70556cc00601db9f"
-    },
-    {
-      "name": "XCHAT / WETH",
-      "address": "0x7f31b0168b3531d0b8a742f2bdb54ae559ccec75",
-      "created_at": "2026-10-25T10:03:13Z",
-      "price_usd": "0.000000860026268088993",
-      "liquidity_usd": "8470.331",
-      "volume_24h_usd": "733.5223985415",
-      "price_change_24h": "28.996",
-      "url": "https://www.geckoterminal.com/base/pools/0x7f31b0168b3531d0b8a742f2bdb54ae559ccec75"
-    },
-    {
-      "name": "Uranus / ETH 0.01%",
-      "address": "0x24174559f7af22040e418fbd4088ca160128370f98602789bf94d8049489a677",
-      "created_at": "2026-10-25T10:02:01Z",
-      "price_usd": "0.00000184879432000902",
-      "liquidity_usd": "2953.504",
-      "volume_24h_usd": "1239.874020194",
-      "price_change_24h": "55.743",
-      "url": "https://www.geckoterminal.com/base/pools/0x24174559f7af22040e418fbd4088ca160128370f98602789bf94d8049489a677"
-    },
-    {
-      "name": "Clankclank / ETH 0.01%",
-      "address": "0x833f56041da683d3b7d8ec5380edf6ec3da77daea2dbe36056d59529abd8509e",
-      "created_at": "2026-10-25T10:00:53Z",
-      "price_usd": "0.0000118983595057366",
-      "liquidity_usd": "8244.4958",
-      "volume_24h_usd": "3147.4648038607",
-      "price_change_24h": "401.059",
-      "url": "https://www.geckoterminal.com/base/pools/0x833f56041da683d3b7d8ec5380edf6ec3da77daea2dbe36056d59529abd8509e"
-    },
-    {
-      "name": "CLANKCLANK / WETH",
-      "address": "0x9db8fc05f2f1901bbd27ef2ed4c73dc99b5c73f81f0cd2999daa590f74d84a53",
-      "created_at": "2026-10-25T09:58:57Z",
-      "price_usd": "0.000000233056736752359",
-      "liquidity_usd": "6060.9662",
-      "volume_24h_usd": "0.002318673978",
+      "name": "STX / WETH",
+      "address": "0xb60efd5dc975ad8fe5dc2f82b1bd9bbae830c3eb3f0e7f1cf69ee3c85948d805",
+      "created_at": "2026-10-25T14:21:29Z",
+      "price_usd": "0.000000232315660983243",
+      "liquidity_usd": "11617.9425",
+      "volume_24h_usd": "0.002325359281",
       "price_change_24h": "0",
-      "url": "https://www.geckoterminal.com/base/pools/0x9db8fc05f2f1901bbd27ef2ed4c73dc99b5c73f81f0cd2999daa590f74d84a53"
+      "url": "https://www.geckoterminal.com/base/pools/0xb60efd5dc975ad8fe5dc2f82b1bd9bbae830c3eb3f0e7f1cf69ee3c85948d805"
     },
     {
-      "name": "CLANKCLANK / WETH",
-      "address": "0xd073781e86ce5da654979c1f62579a85b096db41ae62041571a7e406afc21d41",
-      "created_at": "2026-10-25T09:58:51Z",
-      "price_usd": "0.000000233056736752359",
-      "liquidity_usd": "6060.9662",
-      "volume_24h_usd": "0.002318673978",
+      "name": "FOXHARD / WETH",
+      "address": "0x7bf26a578bd667c222acd1b6b63dd693fdd52eec859e3468509f4877715c79b5",
+      "created_at": "2026-10-25T14:20:49Z",
+      "price_usd": "0.00000023236142523549",
+      "liquidity_usd": "23235.8851",
+      "volume_24h_usd": "0.1087455503",
+      "price_change_24h": "0.031",
+      "url": "https://www.geckoterminal.com/base/pools/0x7bf26a578bd667c222acd1b6b63dd693fdd52eec859e3468509f4877715c79b5"
+    },
+    {
+      "name": "LIQUIDBGT / WETH",
+      "address": "0x299b904946556ac72b87a0a71cc741b14cd4d745",
+      "created_at": "2026-10-25T14:19:11Z",
+      "price_usd": "0.000000837061446442709",
+      "liquidity_usd": "8347.7081",
+      "volume_24h_usd": "592.8451982048",
+      "price_change_24h": "25.358",
+      "url": "https://www.geckoterminal.com/base/pools/0x299b904946556ac72b87a0a71cc741b14cd4d745"
+    },
+    {
+      "name": "LTC / WETH",
+      "address": "0x3fd86bac7ce83a8e6974a175c81531ff8fdb67999e014f1ed9a9e846aa248c03",
+      "created_at": "2026-10-25T14:17:55Z",
+      "price_usd": "0.000000232436305079101",
+      "liquidity_usd": "11620.2856",
+      "volume_24h_usd": "0.002326566866",
       "price_change_24h": "0",
-      "url": "https://www.geckoterminal.com/base/pools/0xd073781e86ce5da654979c1f62579a85b096db41ae62041571a7e406afc21d41"
+      "url": "https://www.geckoterminal.com/base/pools/0x3fd86bac7ce83a8e6974a175c81531ff8fdb67999e014f1ed9a9e846aa248c03"
     },
     {
-      "name": "worth / WETH",
-      "address": "0xb045ef08559a9e0769f8af1e6c1e6ffb816cc423",
-      "created_at": "2026-10-25T09:58:09Z",
-      "price_usd": "0.00000463165363332541",
-      "liquidity_usd": "74258.6076",
-      "volume_24h_usd": "2242.7186346143",
-      "price_change_24h": "12.503",
-      "url": "https://www.geckoterminal.com/base/pools/0xb045ef08559a9e0769f8af1e6c1e6ffb816cc423"
-    },
-    {
-      "name": "SPCX / ETH",
-      "address": "0x35f7d54f1f54c7db76ce7aac945a7572e9646b336ca07645075c6a4aeebedf5d",
-      "created_at": "2026-10-25T09:57:29Z",
-      "price_usd": "0.00000303611479402904",
-      "liquidity_usd": "6021.4452",
-      "volume_24h_usd": "24.5249081867",
-      "price_change_24h": "0",
-      "url": "https://www.geckoterminal.com/base/pools/0x35f7d54f1f54c7db76ce7aac945a7572e9646b336ca07645075c6a4aeebedf5d"
-    },
-    {
-      "name": "USDR / ZORA",
-      "address": "0x2c0ecbe52b8dadb052ecee0476446273e930034006d8f54b5ccea139062266c1",
-      "created_at": "2026-10-25T09:55:59Z",
-      "price_usd": "0.0000905748862038363",
-      "liquidity_usd": "89680.4334",
-      "volume_24h_usd": "24.2702668699",
-      "price_change_24h": "3.286",
-      "url": "https://www.geckoterminal.com/base/pools/0x2c0ecbe52b8dadb052ecee0476446273e930034006d8f54b5ccea139062266c1"
-    },
-    {
-      "name": "Clankclank / ETH 0.01%",
-      "address": "0x11deb6349733ffbe4280a6371f9300702c5d90491049f8f7d9c7210fa233e402",
-      "created_at": "2026-10-25T09:53:01Z",
-      "price_usd": "0.00000102515687281622",
-      "liquidity_usd": "1000.5592",
-      "volume_24h_usd": "327.3731437793",
-      "price_change_24h": "43.528",
-      "url": "https://www.geckoterminal.com/base/pools/0x11deb6349733ffbe4280a6371f9300702c5d90491049f8f7d9c7210fa233e402"
-    },
-    {
-      "name": "Believe / ETH 0.01%",
-      "address": "0x1de0e34598e1e61cfe0672cad48317afdbb2e674c10511e37251418418a16f8d",
-      "created_at": "2026-10-25T09:52:05Z",
-      "price_usd": "0.00000184910430701882",
-      "liquidity_usd": "0.0",
-      "volume_24h_usd": "1239.7341689533",
-      "price_change_24h": "55.796",
-      "url": "https://www.geckoterminal.com/base/pools/0x1de0e34598e1e61cfe0672cad48317afdbb2e674c10511e37251418418a16f8d"
+      "name": "MONERO / WETH 0.3%",
+      "address": "0x4490d1f6a2eca9528396cf770a6208d2d3550ff886a63d35ce84801789f3e082",
+      "created_at": "2026-10-25T14:17:29Z",
+      "price_usd": "595.771600004521",
+      "liquidity_usd": "22538.9720520617",
+      "volume_24h_usd": "1309.3357513853",
+      "price_change_24h": "73855785113.362",
+      "url": "https://www.geckoterminal.com/base/pools/0x4490d1f6a2eca9528396cf770a6208d2d3550ff886a63d35ce84801789f3e082"
     },
     {
       "name": ".AI / WETH",
-      "address": "0x0207d8f89e8cac50bb88341391da3d93a24c37c8",
-      "created_at": "2026-10-25T09:51:03Z",
-      "price_usd": "0.0000000000364183155307599",
-      "liquidity_usd": "0.004814663798",
-      "volume_24h_usd": "1453.6164434611",
-      "price_change_24h": "-99.995",
-      "url": "https://www.geckoterminal.com/base/pools/0x0207d8f89e8cac50bb88341391da3d93a24c37c8"
+      "address": "0x9abc7c2f4b2b4d16936a847d3572428fb824e719",
+      "created_at": "2026-10-25T14:16:49Z",
+      "price_usd": "0.000000888317057108356",
+      "liquidity_usd": "8664.1669",
+      "volume_24h_usd": "790.36993556",
+      "price_change_24h": "32.855",
+      "url": "https://www.geckoterminal.com/base/pools/0x9abc7c2f4b2b4d16936a847d3572428fb824e719"
     },
     {
-      "name": "SEXY / USDC",
-      "address": "0xb8013b5a6472ddc29d5c9af53ba6619fac71f5e530f18a3c8fa53af692a12c76",
-      "created_at": "2026-10-25T09:48:13Z",
-      "price_usd": "0.000000218791945491837",
-      "liquidity_usd": "21876.2626",
-      "volume_24h_usd": "0.002067245209",
-      "price_change_24h": "0.009",
-      "url": "https://www.geckoterminal.com/base/pools/0xb8013b5a6472ddc29d5c9af53ba6619fac71f5e530f18a3c8fa53af692a12c76"
+      "name": "SUI / ETH 0.01%",
+      "address": "0x5c024fff71986492eef9fb5e7eed5aee720b4f02fc93d005b3a13267f82e6e01",
+      "created_at": "2026-10-25T14:15:57Z",
+      "price_usd": "0.00000822772768784969",
+      "liquidity_usd": "6239.4586",
+      "volume_24h_usd": "2333.9343120723",
+      "price_change_24h": "271.409",
+      "url": "https://www.geckoterminal.com/base/pools/0x5c024fff71986492eef9fb5e7eed5aee720b4f02fc93d005b3a13267f82e6e01"
     },
     {
-      "name": "BACKED / USDC",
-      "address": "0x8dfc5fbaa3f9a79cede54b45a6bb889eef8fcdef",
-      "created_at": "2026-10-25T09:47:49Z",
-      "price_usd": "0.0000127676032984894",
-      "liquidity_usd": "11092.6296",
-      "volume_24h_usd": "747.7469953406",
-      "price_change_24h": "26.286",
-      "url": "https://www.geckoterminal.com/base/pools/0x8dfc5fbaa3f9a79cede54b45a6bb889eef8fcdef"
+      "name": "DEL / WETH",
+      "address": "0x5d6e2ce3b6ab5e19b82f632b79f10e12b4e259125c0c51704dfcf44cfcb356ed",
+      "created_at": "2026-10-25T14:14:55Z",
+      "price_usd": "0.000000228453897475349",
+      "liquidity_usd": "3896.9618",
+      "volume_24h_usd": "10.3997517053",
+      "price_change_24h": "-1.823",
+      "url": "https://www.geckoterminal.com/base/pools/0x5d6e2ce3b6ab5e19b82f632b79f10e12b4e259125c0c51704dfcf44cfcb356ed"
     },
     {
-      "name": "LAPTOP / WETH",
-      "address": "0x37ca1d1d9ea65eb17e07ac9e387304fbd3185152",
-      "created_at": "2026-10-25T09:46:41Z",
-      "price_usd": "0.0000000000000405800612285194",
-      "liquidity_usd": "0.0002244077873",
-      "volume_24h_usd": "1685.3839440114",
+      "name": "SUI / ETH 0.01%",
+      "address": "0x5f141d45ff5fb832968da2417e200b873adc0d9b4384bdc48f3afdecf6391d56",
+      "created_at": "2026-10-25T14:14:39Z",
+      "price_usd": "0.00000827822788308927",
+      "liquidity_usd": "5403.5912",
+      "volume_24h_usd": "3230.6387190021",
+      "price_change_24h": "274.186",
+      "url": "https://www.geckoterminal.com/base/pools/0x5f141d45ff5fb832968da2417e200b873adc0d9b4384bdc48f3afdecf6391d56"
+    },
+    {
+      "name": "DOAS / ZORA",
+      "address": "0xfaa63f8696841cac94a99dc1f9504c64002b391d21f035c7022b0b9de10f6310",
+      "created_at": "2026-10-25T14:13:25Z",
+      "price_usd": "0.00017584718044275",
+      "liquidity_usd": "173943.2264",
+      "volume_24h_usd": "5.4029616509",
+      "price_change_24h": "0.159",
+      "url": "https://www.geckoterminal.com/base/pools/0xfaa63f8696841cac94a99dc1f9504c64002b391d21f035c7022b0b9de10f6310"
+    },
+    {
+      "name": "ENA / WETH",
+      "address": "0x270adac8837e1997c6da50813bf8d4ac699adb057badabf4b5187f6b3b42dd96",
+      "created_at": "2026-10-25T14:13:21Z",
+      "price_usd": "0.000000233544770664883",
+      "liquidity_usd": "3036.7095",
+      "volume_24h_usd": "0.002323529412",
+      "price_change_24h": "0",
+      "url": "https://www.geckoterminal.com/base/pools/0x270adac8837e1997c6da50813bf8d4ac699adb057badabf4b5187f6b3b42dd96"
+    },
+    {
+      "name": "YELLOW / WETH",
+      "address": "0x332cc1568e03465ecffba840e8648fc97a50467b2f9f8080bad402333f73894d",
+      "created_at": "2026-10-25T14:13:13Z",
+      "price_usd": "0.000000233544770664883",
+      "liquidity_usd": "3036.7095",
+      "volume_24h_usd": "0.002323529412",
+      "price_change_24h": "0",
+      "url": "https://www.geckoterminal.com/base/pools/0x332cc1568e03465ecffba840e8648fc97a50467b2f9f8080bad402333f73894d"
+    },
+    {
+      "name": "M / WETH",
+      "address": "0xa8b1bcec3508568aea13fb308b31626a33839d0b39e6368b6ac3ddaf77b766af",
+      "created_at": "2026-10-25T14:12:57Z",
+      "price_usd": "0.000000228314287952128",
+      "liquidity_usd": "11409.36",
+      "volume_24h_usd": "10.0610402209",
+      "price_change_24h": "-1.627",
+      "url": "https://www.geckoterminal.com/base/pools/0xa8b1bcec3508568aea13fb308b31626a33839d0b39e6368b6ac3ddaf77b766af"
+    },
+    {
+      "name": "YELLOW / WETH",
+      "address": "0x2bdca768162f1ad9d31e97453cd0bf8b1f0fb068a9d49b83cff7ed067a21bb6c",
+      "created_at": "2026-10-25T14:12:55Z",
+      "price_usd": "0.000000233519717589291",
+      "liquidity_usd": "3037.1134",
+      "volume_24h_usd": "0.00232328016",
+      "price_change_24h": "0",
+      "url": "https://www.geckoterminal.com/base/pools/0x2bdca768162f1ad9d31e97453cd0bf8b1f0fb068a9d49b83cff7ed067a21bb6c"
+    },
+    {
+      "name": "YELLOW / WETH",
+      "address": "0x02c16b5b337be697acf01794a465cbba1f2b1f3cfd9c4c1b52d17927abb7d50c",
+      "created_at": "2026-10-25T14:12:49Z",
+      "price_usd": "0.000000233519717589291",
+      "liquidity_usd": "3037.1134",
+      "volume_24h_usd": "0.00232328016",
+      "price_change_24h": "0",
+      "url": "https://www.geckoterminal.com/base/pools/0x02c16b5b337be697acf01794a465cbba1f2b1f3cfd9c4c1b52d17927abb7d50c"
+    },
+    {
+      "name": "SUI / WETH",
+      "address": "0x68ab07ce7e961fe74c79e6e930b6fe592e9b98b6e8203748b31c809f459432db",
+      "created_at": "2026-10-25T14:12:29Z",
+      "price_usd": "0.000000233529738819528",
+      "liquidity_usd": "3038.325",
+      "volume_24h_usd": "0.00232337986",
+      "price_change_24h": "0",
+      "url": "https://www.geckoterminal.com/base/pools/0x68ab07ce7e961fe74c79e6e930b6fe592e9b98b6e8203748b31c809f459432db"
+    },
+    {
+      "name": "XCHAT / WETH",
+      "address": "0x3cc719f7248ddf7e44c16559eac0296e72020dc5",
+      "created_at": "2026-10-25T14:12:27Z",
+      "price_usd": "0.00000000000000663396912633722",
+      "liquidity_usd": "0.0000321377993210804",
+      "volume_24h_usd": "700.0167716763",
       "price_change_24h": "-100",
-      "url": "https://www.geckoterminal.com/base/pools/0x37ca1d1d9ea65eb17e07ac9e387304fbd3185152"
+      "url": "https://www.geckoterminal.com/base/pools/0x3cc719f7248ddf7e44c16559eac0296e72020dc5"
+    },
+    {
+      "name": "SUI / WETH",
+      "address": "0x17c8c5b7fd62dc0e6e7f0a56472776ed5ed1134bb364c01e95798bf0a418de49",
+      "created_at": "2026-10-25T14:12:23Z",
+      "price_usd": "0.000000233529738819528",
+      "liquidity_usd": "3038.325",
+      "volume_24h_usd": "0.00232337986",
+      "price_change_24h": "0",
+      "url": "https://www.geckoterminal.com/base/pools/0x17c8c5b7fd62dc0e6e7f0a56472776ed5ed1134bb364c01e95798bf0a418de49"
     }
   ]
 }
